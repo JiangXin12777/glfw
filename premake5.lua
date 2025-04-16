@@ -41,6 +41,11 @@ project "GLFW"
             "_CRT_SECURE_NO_WARNINGS"
 		}
 
+    
+	filter "system:linux"
+        pic "On"
+        systemversion "latest"
+
 	filter "configurations:Debug"
 		symbols "on"
 		runtime "Debug"
